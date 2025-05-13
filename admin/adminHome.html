@@ -81,11 +81,13 @@
       <!-- Sidebar -->
       <div class="col-md-2 sidebar">
         <h5>Wedding Admin</h5>
-        <a href="#"><i class="bi bi-house-door-fill"></i> Dashboard</a>
-        <a href="#"><i class="bi bi-people-fill"></i> Users</a>
-        <a href="#"><i class="bi bi-camera-fill"></i> Albums</a>
-        <a href="#"><i class="bi bi-play-btn-fill"></i> Videos</a>
-        <a href="#"><i class="bi bi-calendar-event-fill"></i> Events</a>
+        <a href="adminHome.html"><i class="bi bi-house-door-fill"></i> Dashboard</a>
+        <a href="users.html"><i class="bi bi-people-fill"></i> Users</a>
+        <!-- <a href="albums.html"><i class="bi bi-camera-fill"></i> Albums</a>
+        <a href="videos.html"><i class="bi bi-play-btn-fill"></i> Videos</a> -->
+        <a href="photos.html"><i class="bi bi-calendar-event-fill"></i> Photos</a>
+        <a href="weddingShorts.html"><i class="bi bi-calendar-event-fill"></i> Wedding Shorts</a>
+        <a href="preWeddingShorts.html"><i class="bi bi-calendar-event-fill"></i> Pre Wedding Shorts</a>
       </div>
 
       <!-- Main Content -->
@@ -129,12 +131,12 @@
                 <h5>Photo Shoot Upload</h5>
                 <form>
                   <input type="file" class="form-control mb-3">
-                  <button class="btn btn-upload" style="background-color:chartreuse;"><i class="bi bi-upload upload-icon"></i>Upload</button>
+                  <button type="submit" name="photoUpload" class="btn btn-upload" style="background-color:chartreuse;"><i class="bi bi-upload upload-icon"></i>Upload</button>
                 </form>
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6" aria-disabled>
               <div class="card-style">
                 <h5>Extra</h5>
                 <form>
@@ -154,7 +156,7 @@
                 <h5>Wedding Short Upload</h5>
                 <form>
                   <input type="file" class="form-control mb-3">
-                  <button class="btn btn-upload"><i class="bi bi-upload upload-icon"></i>Upload</button>
+                  <button type="submit" name="weddingShortUpload" class="btn btn-upload"><i class="bi bi-upload upload-icon"></i>Upload</button>
                 </form>
               </div>
             </div>
@@ -164,12 +166,43 @@
                 <h5>PreWedding Short Upload</h5>
                 <form>
                   <input type="file" class="form-control mb-3">
-                  <button class="btn btn-upload"><i class="bi bi-upload upload-icon"></i>Upload</button>
+                  <button type="submit" name="PreWeddingUpload" class="btn btn-upload"><i class="bi bi-upload upload-icon"></i>Upload</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Album upload   -->
+        <div class="container mt-4">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card-style">
+                <h5>Album Upload</h5>
+                <form>
+                  <input type="file" name="album[]" class="form-control mb-3" multiple>
+                  <label for="albumId" class="form-control-label">Customer Mobile Number</label>
+                  <input id="albumId" type="number" name="user" class="form-control mb-3">
+                  <button type="submit" name="albumUpload" class="btn btn-upload" style="background-color:chartreuse;"><i class="bi bi-upload upload-icon"></i>Upload</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card-style">
+                <h5>Wedding Video Upload</h5>
+                <form>
+                  <input type="file" class="form-control mb-3">
+                  <label for="albumId" class="form-control-label">Customer Mobile Number</label>
+                  <input id="videoId" type="number" name="user" class="form-control mb-3">
+                  <button type="submit" name="videoUpload" class="btn btn-upload"><i class="bi bi-upload upload-icon"></i>Upload</button>
+                </form>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <br>
 
       </div>
     </div>
