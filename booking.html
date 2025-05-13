@@ -27,18 +27,18 @@
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="form-card">
-        <h2 class="form-title">Wedding Booking Form</h2>
-        <form>
+        <h2 class="form-title">Payal Production Wedding Booking</h2>
+        <form method="post" action="bill.php">
 
           <!-- Dulha & Dulhan -->
           <div class="row mb-3">
             <div class="col-md-6">
               <label class="form-label">Dulha ka Naam</label>
-              <input type="text" class="form-control" required>
+              <input type="text" name="dulha" class="form-control" required>
             </div>
             <div class="col-md-6">
               <label class="form-label">Dulhan ka Naam</label>
-              <input type="text" class="form-control" required>
+              <input type="text" name="dulhan" class="form-control" required>
             </div>
           </div>
 
@@ -46,29 +46,29 @@
           <div class="row mb-3">
             <div class="col-md-6">
               <label class="form-label">Shaadi ki Tareekh</label>
-              <input type="date" class="form-control" required>
+              <input type="date" name="shadiDate" class="form-control" required>
             </div>
             <div class="col-md-6">
-              <label class="form-label">Shooting Working Days</label>
-              <input type="text" class="form-control" required>
+              <label class="form-label">Baarat kaha se kaha tak</label>
+              <input type="text" name="baarat" class="form-control" required>
             </div>
           </div>
 
           <!-- Venue -->
           <div class="mb-3">
-            <label class="form-label">Shadi ka Pata</label>
-            <textarea class="form-control" rows="2" required></textarea>
+            <label class="form-label">Shadi ka Address</label>
+            <textarea class="form-control" name="address" rows="2" required></textarea>
           </div>
 
           <!-- Booking Person Details -->
           <div class="row mb-3">
             <div class="col-md-6">
               <label class="form-label">Booking Karta Ka Naam</label>
-              <input type="text" class="form-control" required>
+              <input type="text" name="bookingKarta" class="form-control" required>
             </div>
             <div class="col-md-6">
               <label class="form-label">Booking Mobile Number</label>
-              <input type="tel" class="form-control" required>
+              <input type="tel" name="mobile" class="form-control" required>
             </div>
           </div>
 
@@ -76,11 +76,11 @@
           <div class="row mb-3">
             <div class="col-md-6">
                <label class="form-label">Deal Amount (₹)</label>
-               <input type="number" class="form-control" required placeholder="Total amount">
+               <input type="number" name="dealAmount" class="form-control" required placeholder="Total amount">
             </div>
             <div class="col-md-6">
               <label class="form-label">Initial Pay Amount (₹)</label>
-              <input type="number" class="form-control" required placeholder="Advance payment">
+              <input type="number" name="initialPay" class="form-control" required placeholder="Advance payment">
             </div>
           </div>
 
@@ -88,35 +88,35 @@
           <div class="mb-3">
             <label class="form-label">Services</label>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="service1">
+              <input class="form-check-input" name="onlyPhoto" value="Only Photo" type="checkbox" id="service1">
               <label class="form-check-label" for="service1">Only Photo</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="service2">
+              <input class="form-check-input" name="onlyVideo" value="Only Video" type="checkbox" id="service2">
               <label class="form-check-label" for="service2">Only Video</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="service3">
+              <input class="form-check-input" name="normalWedding" value="Normal Photo & Video" type="checkbox" id="service3">
               <label class="form-check-label" for="service3">Normal Photo & Video</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="service4">
+              <input class="form-check-input" name="specialWedding" value="Professional(Special) Photo & Video" type="checkbox" id="service4">
               <label class="form-check-label" for="service4">Professional(Special) Photo & Video</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="service5">
+              <input class="form-check-input" name="dron" value="Dron" type="checkbox" id="service5">
               <label class="form-check-label" for="service5">Dron</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="service6">
+              <input class="form-check-input" name="candid" value="Candid Photography" type="checkbox" id="service6">
               <label class="form-check-label" for="service6">Candid Photography</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="service7">
+              <input class="form-check-input" name="preWedding" value="Pre Wedding" type="checkbox" id="service7">
               <label class="form-check-label" for="service7">Pre Wedding</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="service8">
+              <input class="form-check-input" name="cinematic" value="Cinematic Photography & Videography" type="checkbox" id="service8">
               <label class="form-check-label" for="service8">Cinematic Photography & Videography</label>
             </div>
           </div>
@@ -124,7 +124,7 @@
           <!-- Special Request -->
           <div class="mb-3">
             <label class="form-label">Koi Special Request</label>
-            <textarea class="form-control" rows="3"></textarea>
+            <textarea class="form-control" name="extraQuery" rows="3"></textarea>
           </div>
 
           <!-- Terms and Conditions -->
@@ -136,7 +136,7 @@
          </div>
 
           <!-- Submit -->
-          <button type="submit" class="btn btn-primary w-100">Booking Submit Karein</button>
+          <button type="submit" name="bookingSubmit" class="btn btn-primary w-100">Booking Now</button>
         </form>
       </div>
     </div>
