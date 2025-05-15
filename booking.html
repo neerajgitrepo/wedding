@@ -74,13 +74,17 @@
 
           <!-- Deal Amount & Initial Pay -->
           <div class="row mb-3">
-            <div class="col-md-6">
+            <div class="col-md-4">
                <label class="form-label">Deal Amount (₹)</label>
                <input type="number" name="dealAmount" class="form-control" required placeholder="Total amount">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <label class="form-label">Initial Pay Amount (₹)</label>
               <input type="number" name="initialPay" class="form-control" required placeholder="Advance payment">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Album Sheet Total Pages</label>
+              <input type="number" name="albumpage" class="form-control" required placeholder="Album Pages">
             </div>
           </div>
 
@@ -152,13 +156,16 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>1. Booking confirmation tabhi hoga jab full ya partial payment receive hoga.</p>
-        <p>2. Venue ki availability first-come-first-serve basis par hai.</p>
-        <p>3. Cancellation policy applicable hogi – cancellation charges lag sakte hain.</p>
-        <p>4. Service provider event ke dauran photo ya video le sakta hai (for marketing purpose).</p>
-        <p>5. Any damage to property/event area will be borne by the booking person.</p>
-        <p>6. Organizer kisi bhi time terms change kar sakta hai without prior notice.</p>
-        <p>7. By booking, you accept all the above conditions in full.</p>
+        <ul>
+      <li>किसी भी स्थिति में बुकिंग कैन्सल करने पर अग्रिम(Advance) जमा राशि Refund योग्य नहीं है,प्रोग्राम चालू होने की स्थिति में पूरा चार्ज भी लिया जा सकेगा ।</li>
+      <li>शेष भुगतान शादी तारीख तक अनिवार्य रूप से करना होगा। भुगतान न होने की स्थिति में ऑर्डर  कैन्सल माना जा सकेगा।</li>
+      <li> एल्बम की सीट बढ़ने पर चार्ज अलग से देना होगा !</li>
+      <li>फोटोग्राफर ब स्टाफ को लाने ले जाने खाना, रुकना आदि की जिम्मेदारी ग्राहक की स्वयं की होगी,फोटोग्राफर बा उसकी टीम के साथ किसी भी प्रकार की बदसलूकी या दुर्ववाहर की स्थिति में फोटोग्राफर बा टीम को वापस बुलाया जा सकता है ऐसी स्थिति में जमा की गई राशि वापस नहीं की जावेगी !</li>
+      <li> निर्धारित कार्य से अधिक कार्य करने पर 3000 रुपए घंटे के हिसाब से चार्ज देना होगा !</li>
+      <li>ग्राहक द्वारा तैयार कराया गया परिधान/डिज़ाइन, वेडिंग शूट अथवा संबंधित सामग्री का उपयोग दुकान प्रचार एवं विज्ञापन के लिए किया जा सकता है। इस पर समस्त कॉपीराइट एवं मालिकाना हक दुकान के पास सुरक्षित रहेगा।</li>
+      <li>किसी टेक्निकल प्रॉब्लम या सामग्री गुम होने या डाटा करप्ट हो जाने के कारण डाटा नहीं मिल पाने की स्थिति में स्टूडियो की कोई जवाबदारी नही होगी, अगर इस स्थिति में कस्टमर रुपए वापिस लेने या लड़ाई-झगड़े की कोशिश करता है तो उसपे कानूनी कार्यवाही की जा सकती है</li>
+      <li>किसी भी विवाद की स्थिति में न्याय क्षेत्र भोपाल न्यायालय रहेगा।</li>
+    </ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

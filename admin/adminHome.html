@@ -129,8 +129,8 @@
             <div class="col-md-6">
               <div class="card-style">
                 <h5>Photo Shoot Upload</h5>
-                <form>
-                  <input type="file" class="form-control mb-3">
+                <form method="post" action="uploadBakend.php" enctype="multipart/form-data">
+                  <input type="file" name="photoInput" class="form-control mb-3">
                   <button type="submit" name="photoUpload" class="btn btn-upload" style="background-color:chartreuse;"><i class="bi bi-upload upload-icon"></i>Upload</button>
                 </form>
               </div>
@@ -139,7 +139,7 @@
             <div class="col-md-6" aria-disabled>
               <div class="card-style">
                 <h5>Extra</h5>
-                <form>
+                <form method="post" action="uploadBakend.php" enctype="multipart/form-data">
                   <input type="file" class="form-control mb-3" disabled>
                   <button class="btn btn-upload" style="background-color: darkorange;" disabled><i class="bi bi-upload upload-icon"></i>Upload</button>
                 </form>
@@ -154,8 +154,8 @@
             <div class="col-md-6">
               <div class="card-style">
                 <h5>Wedding Short Upload</h5>
-                <form>
-                  <input type="file" class="form-control mb-3">
+                <form method="post" action="uploadBakend.php" enctype="multipart/form-data">
+                  <input type="file" name="weddingInput" class="form-control mb-3">
                   <button type="submit" name="weddingShortUpload" class="btn btn-upload"><i class="bi bi-upload upload-icon"></i>Upload</button>
                 </form>
               </div>
@@ -164,8 +164,8 @@
             <div class="col-md-6">
               <div class="card-style">
                 <h5>PreWedding Short Upload</h5>
-                <form>
-                  <input type="file" class="form-control mb-3">
+                <form method="post" action="uploadBakend.php" enctype="multipart/form-data">
+                  <input type="file" name="preweddingInput" class="form-control mb-3">
                   <button type="submit" name="PreWeddingUpload" class="btn btn-upload"><i class="bi bi-upload upload-icon"></i>Upload</button>
                 </form>
               </div>
@@ -179,10 +179,10 @@
             <div class="col-md-6">
               <div class="card-style">
                 <h5>Album Upload</h5>
-                <form>
+                <form method="post" action="uploadBakend.php" enctype="multipart/form-data">
                   <input type="file" name="album[]" class="form-control mb-3" multiple>
                   <label for="albumId" class="form-control-label">Customer Mobile Number</label>
-                  <input id="albumId" type="number" name="user" class="form-control mb-3">
+                  <input id="albumId" type="number" name="albumUser" class="form-control mb-3">
                   <button type="submit" name="albumUpload" class="btn btn-upload" style="background-color:chartreuse;"><i class="bi bi-upload upload-icon"></i>Upload</button>
                 </form>
               </div>
@@ -191,10 +191,10 @@
             <div class="col-md-6">
               <div class="card-style">
                 <h5>Wedding Video Upload</h5>
-                <form>
-                  <input type="file" class="form-control mb-3">
-                  <label for="albumId" class="form-control-label">Customer Mobile Number</label>
-                  <input id="videoId" type="number" name="user" class="form-control mb-3">
+                <form method="post" action="uploadBakend.php" enctype="multipart/form-data">
+                  <input type="file" name="video" class="form-control mb-3">
+                  <label for="videoId" class="form-control-label">Customer Mobile Number</label>
+                  <input id="videoId" type="number" name="videoUser" class="form-control mb-3">
                   <button type="submit" name="videoUpload" class="btn btn-upload"><i class="bi bi-upload upload-icon"></i>Upload</button>
                 </form>
               </div>
